@@ -1,0 +1,211 @@
+// тимчасові змінні поки не зістикується з іншими
+
+$mobile: 320px;
+$preTablet: 767px;
+$tablet: 768px;
+$preDesktop: 1199px;
+$desktop: 1200px;
+
+.section_customer-review {
+  padding: 30px 0;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 60px 0;
+  }
+}
+
+// slider
+
+.slider.slick-slider {
+  @media screen and (min-width: $tablet) {
+    max-width: 620px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 968px;
+  }
+}
+
+// content
+.slick-list {
+  overflow: hidden;
+}
+
+// track slider
+.slick-track {
+  @include flex-center-center;
+}
+
+.slider .slick-dots {
+  @include flex-center-center;
+  column-gap: 18px;
+}
+.slider .slick-dots li {
+  font-size: 0;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.slider .slick-dots li.slick-active button {
+  position: relative;
+  background-image: url('../images/customer_reviews/icon-home.svg');
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+.slider {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__img {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    padding: 43px 50px 17px;
+    background-color: rgba(250, 250, 250, 1);
+    margin-bottom: 36px;
+    z-index: 1;
+
+    @media screen and (min-width: $tablet) {
+      padding: 37px 6px;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 47px 73px;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__wrap::before,
+  &__wrap::after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__wrap::before {
+    z-index: -1;
+    top: 30px;
+    left: 53px;
+    width: 54px;
+    height: 40px;
+    background-image: url('../images/customer_reviews/icon-quotes.svg');
+
+    @media screen and (min-width: $tablet) {
+      top: 20px;
+      left: 6px;
+      width: 61px;
+      height: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      top: 32px;
+      left: 72px;
+      width: 54px;
+      height: 40px;
+    }
+  }
+
+  &__wrap::after {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 34px;
+    height: 4px;
+    background-image: url('../images/customer_reviews/icon-ellipse-3x.svg');
+
+    @include for-tablet-up {
+      bottom: -8px;
+    }
+  }
+
+  &__inner {
+    padding: 0 12px 9px 15px;
+
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      #e1e1e1 30.6px
+    );
+
+    @media screen and (min-width: $tablet) {
+      padding: 0px 49px 8px 45px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0px 35px 8px;
+    }
+  }
+
+  &__meta {
+    text-indent: 48px;
+    //  відступ до першого слова можливо потрібен, адже при розтягування слова заїжають на іконку цитати
+    font-family: DM Sans, serif;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30.6px;
+    margin: 0;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 2.1429;
+      line-height: 30.24px;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: 29.76px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__label {
+    margin-bottom: 16px;
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26.04px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 29.76px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 37.2px;
+    }
+  }
+}
