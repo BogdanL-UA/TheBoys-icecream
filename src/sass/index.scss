@@ -1,2 +1,18 @@
-@import './common';
-@import './example';
+@import './utils/common';
+@import './utils/breakpoints';
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/hidden';
+
+@import './layouts/container';
+@import './layouts/section';
+
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';
