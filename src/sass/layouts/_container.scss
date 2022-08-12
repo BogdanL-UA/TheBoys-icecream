@@ -4,13 +4,20 @@
   padding-left: 20px;
   padding-right: 20px;
 
-   @include for-tablet-up {
-    padding-left: 16px;
-  padding-right: 16px;
+  @include for-phone-up {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  @include for-tablet-up {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
   }
 
   @include for-desktop {
     padding-left: 16px;
-  padding-right: 16px;
+    padding-right: 16px;
+    max-width: 1200px;
   }
 }
