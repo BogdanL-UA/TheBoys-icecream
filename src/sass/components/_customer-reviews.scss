@@ -148,8 +148,8 @@
       to bottom,
       transparent,
       transparent 29.6px,
-      $color-customer-reviews-text-underline 29.6px,
-      $color-customer-reviews-text-underline 30.6px
+      $customer-reviews-underline-color 29.6px,
+      $customer-reviews-underline-color 30.6px
     );
 
     @include for-tablet-up-min {
