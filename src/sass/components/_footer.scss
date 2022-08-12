@@ -1,0 +1,53 @@
+.footer {
+    background-color: $about-bg-color;
+&__wrap{
+    display: flex;
+}
+&__title{
+font-family: 'Titan One';
+text-transform: uppercase;
+text-align: left;
+@include for-tablet-up {
+    width: 340px;
+}
+}
+
+&__text--pre-title{
+        font-size: 18px;
+        line-height: calc(21 / 18);
+ color: $dark-pink-bg-color;
+ margin-bottom: 16px;
+ @include for-tablet-up-min {
+    font-size: 26px;
+        line-height: calc(30 / 26);
+        letter-spacing: 0.04em;
+ }
+ @include for-desktop {
+    font-size: 30px;
+        line-height: calc(34 / 30);
+ }
+ @include for-tablet-up {
+    margin-bottom: 12px;
+ }
+
+}
+&__text--title{
+    font-size: 34px;
+    line-height: calc(39 / 34);
+    letter-spacing: 0.04em;
+    color: $titan-title-big-color;
+    
+    @include for-tablet-up-min {
+    font-size: 58px;
+        line-height: calc(66 / 58);
+        letter-spacing: 0.06em;
+    }
+    @include for-desktop {
+
+    }
+}
+&__social {
+    display: flex;
+}
+
+}
