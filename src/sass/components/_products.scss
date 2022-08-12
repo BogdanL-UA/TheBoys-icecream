@@ -1,14 +1,23 @@
+.products{
+    display: flex;
+    flex-direction: column;
+}
 .products__label{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
-    text-align: center;
     text-transform: uppercase;
     
     color: $titan-title-small-color;
 }
 .products__header{
+    margin-bottom: 148px;
+
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -19,4 +28,60 @@
     text-transform: uppercase;
 
     color: $titan-title-big-color;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    background-color: $lite-pink-bg-color;
+    border-radius: 24px;
+    padding: 40px;
+}
+.product-item:not(:last-child){
+    margin-bottom: 140px;
+}
+.product-item__header{
+    margin-bottom: 32px;
+    position: relative;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $main-white-color;
+
+    &::before{
+        content: url(../images/products/firsticemob.jpg);
+        display: block;
+        width: 280px;
+        height: 280px;
+        
+    }
+
+    &::after{
+        content: url(../images/products/ellipsis.jpg);
+        display: block;
+    }
+}
+.product-item__text{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $main-white-color;
+}
+.product-item__button{
+   margin-left: auto;
+   margin-right: auto;
+    width: 40px;
+    height: 40px;
+    background: url(../images/products/arrow-right.jpg);
+    border-radius: 50%;
 }
