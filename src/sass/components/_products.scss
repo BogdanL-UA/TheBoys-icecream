@@ -29,10 +29,18 @@
 
     color: $titan-title-big-color;
 }
+.product-items{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
 .product-item{
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 280px;
+    height: 489px;
     border-radius: 24px;
     background-color: $lite-pink-bg-color;
     padding: 40px;
@@ -61,25 +69,61 @@
     text-transform: uppercase;
 
     color: $main-white-color;
-
-    &::before{
-        content: url(../images/products/firsticemob.png);
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-50%);
-        margin-bottom: 20px;
+        &::after {
+                content: url(../images/products/ellipsis.png);
+                display: block;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+        }
+.first-header{
+        &::before {
+                content: url(../images/products/firsticemob.png);
+                display: flex;
         
-    }
-
-    &::after{
-        content: url(../images/products/ellipsis.png);
-        display: block;
-        margin-top: 32px;
-        margin-bottom: 32px;
-    }
+                position: absolute;
+                width: 280px;
+                height: 280px;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-bottom: 20px;
+        
+            }
 }
+.second-header{
+    &::before {
+            content: url(../images/products/secondicemob.png);
+            display: flex;
+    
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 20px;
+    
+        }
+}
+.third-header{
+    &::before {
+            content: url(../images/products/thirdicemob.png);
+            display: flex;
+    
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-bottom: 20px;
+    
+        }
+}
+
+
+
 .product-item__text{
     font-family: 'DM Sans';
     font-style: normal;
@@ -99,4 +143,7 @@
     background: url(../images/products/arrow-right.png);
     background-size: contain;
     border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
