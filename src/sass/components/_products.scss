@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 .products__label{
+    @media screen and(min-width:767px) {
+        margin-bottom: 18px;
+        font-size: 26px;
+        line-height: 1.15;
+    }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -11,6 +16,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
+    text-align: center;
     text-transform: uppercase;
     
     color: $titan-title-small-color;
@@ -163,7 +169,7 @@
 
     background: url(../images/products/arrow-right.png);
     @include retina {
-    content: url("../images/products/arrow-rightx2.png")}
+    content: url("../images/icons.svg#button-arrow")}
     
     background-size: contain;
     border-radius: 50%;
