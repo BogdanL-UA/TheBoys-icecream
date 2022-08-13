@@ -98,14 +98,18 @@
 
     color: $main-white-color;
         &::after {
-                content: url(../images/products/ellipsis.png);
+                background-image: url(../images/products/ellipsis.png);
                 @include retina {
-                content: url("../images/products/ellipsisx2.png")
+                background-image: url("../images/products/ellipsisx2.png")
                 }
-                display: flex;
-               flex-direction: column;
+                content: "";
+                display: block;
+            
                width: 26px;
                height: 6px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 32px;
@@ -114,51 +118,59 @@
         }
 .first-header{
         &::before {
-                content: url(../images/products/firsticemob.png);
+                background-image: url(../images/products/firsticemob.png);
                 @include retina {
-                content: url("../images/products/firsticemobx2.png")
+                background-image: url("../images/products/firsticemobx2.png")
                     }
-                display: flex;
+                content:"";
                 position: absolute;
-                width: 280px;
-                height: 280px;
                 top: 0;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%,-50%);
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 280px;
+                height: 280px;
                 margin-bottom: 20px;
         @media screen and (min-width:767px) {
-            content: url(../images/products/firsticetab.png);
+            background-image: url(../images/products/firsticetab.png);
             @include retina {
-            content: url("../images/products/firsticetabx2.png")
+            background-image: url("../images/products/firsticetabx2.png")
                 }
             width: 224px;
             height: 224px;
             margin-bottom: 32px;
-            transform: translate(-50%,-60%);
+            transform: translate(-50%, -60%);
         }
             }
 }
 .second-header{
     &::before {
-        content: url(../images/products/secondicemob.png);
-        @include retina {
-            content: url("../images/products/secondicemobx2.png")
+        background-image: url(../images/products/secondicemob.png);
+        
+            @include retina {
+                background-image: url("../images/products/secondicemobx2.png")
             }
-            
-            display: flex;
-    
+        
+            content:"";
             position: absolute;
-            width: 280px;
-            height: 280px;
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 280px;
+            height: 280px;
             margin-bottom: 20px;
                 @media screen and (min-width:767px) {
-                    content: url(../images/products/secondicetab.png);
+                    background-image: url(../images/products/secondicetab.png);
         
                     @include retina {
-                    content: url("../images/products/secondicetabx2.png")
+                    background-image: url("../images/products/secondicetabx2.png")
                     }
         
                     width: 224px;
@@ -170,33 +182,38 @@
 }
 .third-header{
     &::before {
-        content: url(../images/products/thirdicemob.png);
-        @include retina {
-            content: url("../images/products/thirdicemobx2.png")
-            }
-            
-            display: flex;
+    background-image: url(../images/products/thirdicemob.png);
     
-            position: absolute;
-            width: 280px;
-            height: 280px;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-bottom: 20px;
-                @media screen and (min-width:767px) {
-                    content: url(../images/products/thirdicetab.png);
-        
-                    @include retina {
-                        content: url("../images/products/thirdicetabx2.png")
-                    }
-        
-                    width: 224px;
-                    height: 224px;
-                    margin-bottom: 32px;
-                    transform: translate(-50%, -60%);
-                }
+        @include retina {
+            background-image: url("../images/products/thirdicemobx2.png")
         }
+    
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+    
+        @media screen and (min-width:767px) {
+            background-image: url(../images/products/thirdicetab.png);
+    
+            @include retina {
+                background-image: url("../images/products/thirdicetabx2.png")
+            }
+    
+            width: 224px;
+            height: 224px;
+            margin-bottom: 32px;
+            transform: translate(-50%, -60%);
+        }
+    }
 }
 
 
@@ -220,7 +237,7 @@
 .product-item__button{
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
     width: 40px;
     height: 40px;
 
