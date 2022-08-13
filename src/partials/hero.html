@@ -1,13 +1,33 @@
-<section class="hero">
-   <div class="container">
+<section class="hero section">
+<div class="  container">
+   <div class="wrap-hero">
       <h1 class="hero__title">ice cream
       <br>made with<br>
       <span class="hero__title-passion"> passion </span>
+      </h1>
+       <div class="wrap-hero__buttons">
+     <button class=" product-button" type="button">Products</button>  
+      <button class="made-button" type="button" >How it’s made?</button>       
+        </div> 
+  
+   </div>    
+   <picture>
+        
+      <source srcset='/src/images/hero/mobile-ice-cream1x.png 1x , /src/images/hero/mobile-ice-cream@2x.png 2x' media="(max-width:767px)"/> 
+      
+      <!-- <source srcset='/src/images/hero/tablet-ice-cream1x.png 1x , /src/images/hero/tablet-ice-cream@2x.png 2x'
+         media="(min-width:768px)" />  -->
 
-   </h1>
-   <div class="buttons">
-<button class=" product-button" type="button">Products</button>
-<button class="made-button" type="button">How it’s made?</button >      
-   </div> 
-   </div>
+      <img class="mobile-ice-cream"
+       src="/src/images/hero/mobile-ice-cream.png" alt="ice-cream" />
+   </picture> 
+   <picture>
+
+      <source srcset='/src/images/hero/tablet-Ellipse1x.png 1x , /src/images/hero/tablet-Ellipse@2x.png 2x'
+         media="(max-width:767px)" />
+
+      <img class="mobile-ellipse"  src="/src/images/hero/tablet-Ellipse.png" alt="ellipce"/> 
+     
+   </picture> 
+</div> 
 </section> 
