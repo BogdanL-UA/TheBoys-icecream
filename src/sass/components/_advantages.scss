@@ -9,16 +9,59 @@
   &__item {
     display: flex;
     flex-direction: column;
+
+    width: 230px;
     margin-bottom: 32px;
   }
 
-  &__item1::before {
+  &__item1 {
+    @include for-tablet-up {
+      width: 180px;
+      margin-right: 4px;
+    }
+    @include for-desktop {
+      width: 288px;
+      margin-right: 115px;
+    }
+  }
+
+  &__item2 {
+    @include for-tablet-up {
+      width: 162px;
+      margin-right: 22px;
+    }
+    @include for-desktop {
+      width: 317px;
+      margin-right: 80px;
+    }
+  }
+
+  &__item3 {
+    @include for-tablet-up {
+      width: 159px;
+    }
+    @include for-desktop {
+      width: 288px;
+    }
+  }
+
+  &__item::before {
     display: inline-block;
     content: '';
     width: 50px;
     height: 50px;
     background-size: contain;
     margin-bottom: 16px;
+
+    @include for-tablet-up {
+      margin-bottom: 36px;
+    }
+    @include for-desktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item1::before {
     background-image: url('/src/images/advantages/advantages-icon1.png');
 
     @include for-phone-up {
@@ -30,20 +73,14 @@
         }
       }
     }
-    @include retina {
-      &__item1::before {
-        background-image: url('/src/images/advantages/advantages-icon1@x2.png');
-      }
+  }
+  @include retina {
+    &__item1::before {
+      background-image: url('/src/images/advantages/advantages-icon1@x2.png');
     }
   }
 
   &__item2::before {
-    display: inline-block;
-    content: '';
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    margin-bottom: 16px;
     background-image: url('/src/images/advantages/advantages-icon2.png');
   }
   @include retina {
@@ -53,12 +90,8 @@
   }
 
   &__item3::before {
-    display: inline-block;
-    content: '';
     width: 44px;
-    height: 50px;
-    background-size: contain;
-    margin-bottom: 16px;
+
     background-image: url('/src/images/advantages/advantages-icon3.png');
   }
   @include retina {
@@ -69,26 +102,48 @@
 
   &__span {
     font-family: 'Titan One';
+    height: 56px;
 
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 4px;
 
     color: $titan-title-big-color;
+
+    @include for-tablet-up {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 13px;
+    }
+
+    @include for-desktop {
+      font-size: 58px;
+      line-height: 1.14;
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
     font-family: 'DM Sans';
-    width: 230px;
 
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.66;
     margin-bottom: 0;
 
     color: $bleak-text;
+
+    @include for-tablet-up {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    @include for-desktop {
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+    }
   }
 }
