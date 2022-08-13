@@ -54,16 +54,11 @@ width: 232px;
         line-height: calc(66 / 58);
         letter-spacing: 0.06em;
     }
-    @include for-desktop {
-
     }
-}
 & a {
     display: flex;
 }
-&__messanger {
 
-}
 &__social--list {
         display: flex;
         justify-content: flex-end;
