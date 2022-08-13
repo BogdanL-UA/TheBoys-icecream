@@ -62,20 +62,12 @@
   }
 
   &__item1::before {
+    width: 33px;
     background-image: url('/src/images/advantages/advantages-icon1.png');
-
-    @include for-phone-up {
-      width: 33px;
-      background-image: url('/src/images/advantages/advantages-icon1-mobile.png');
-      @include retina {
-        &__item1::before {
-          background-image: url('/src/images/advantages/advantages-icon1@x2-mobile.png');
-        }
-      }
-    }
   }
   @include retina {
     &__item1::before {
+      width: 33px;
       background-image: url('/src/images/advantages/advantages-icon1@x2.png');
     }
   }
