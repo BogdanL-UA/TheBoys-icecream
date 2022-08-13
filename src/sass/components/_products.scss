@@ -170,12 +170,12 @@
 }
 .third-header{
     &::before {
-        content: url(../images/products/thirdicemob.png);
+        background-image: url(../images/products/thirdicemob.png);
         @include retina {
-            content: url("../images/products/thirdicemobx2.png")
+            background-image: url("../images/products/thirdicemobx2.png")
             }
-            
-            display: flex;
+            content: "";
+            display: inline-block;
     
             position: absolute;
             width: 280px;
