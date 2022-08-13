@@ -1,9 +1,10 @@
 .hero {
   position: relative ;
    background-color:$lite-pink-bg-color ;
-   @include for-phone-up{ height:502px;}
-   @include for-tablet-up{ height:416px;}
-   @include for-desktop{ height:664px };
+   @include for-phone-up{ height:448px;}
+   @include for-tablet-up{ height:338px;
+   padding: 20px 20px;}
+   @include for-desktop{ height:581px };
  
    &__title{
       z-index: 99;
@@ -34,6 +35,27 @@
             }
 
       }
+
+     &__text{
+      position: absolute;
+      color: $main-white-color;
+      z-index: 999;
+      
+      @include for-phone-up{
+         display: none;
+      }
+      @include for-tablet-up{
+         font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.1;
+            margin-bottom: 7px;
+           
+         
+      }
+
+     } 
 }
 
 .product-button {
@@ -43,52 +65,85 @@
    cursor: pointer;
    padding: 8px 16px;
    font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 1.25;
-      color: $main-white-color;
-      background-color:$titan-title-big-color ;
-       @include  for-desktop{
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 1.25;
+   color: $main-white-color;
+   background-color: $titan-title-big-color ;
+
+   @include for-desktop {
       font-size: 14px;
-   line-height: 1.28;
-   padding: 11px 23px;
-   
+      line-height: 1.28;
+      padding: 11px 23px;
+
+   }
 }
-}
+
 .made-button {
    font-family: 'DM Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 1.25;
-      padding: 8px 16px;
-      border-radius: 20px;
-      border: none;
-      background-color:$main-white-color ;
-      color: $titan-title-big-color;
-      @include for-desktop {
-            font-size: 14px;
-            line-height: 1.28;
-            padding: 11px 23px;
-         }
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 1.25;
+   padding: 8px 16px;
+   border-radius: 20px;
+   border: none;
+   background-color: $main-white-color ;
+   color: $titan-title-big-color;
+
+   @include for-desktop {
+      font-size: 14px;
+      line-height: 1.28;
+      padding: 11px 23px;
+   }
 }
-.wrap-hero{
-  
-   @include for-tablet-up{
+
+.wrap-hero {
+
+   @include for-tablet-up {
       margin-top: 0;
    }
+
    @include for-desktop {
-         margin-top: 40px;
-       }
-  margin-top: 136px;
-  display: flex;
-  flex-direction: column;
-  &__buttons{
-   z-index: 99;
-  }
- 
+      margin-top: 0;
+   }
+
+   margin-top: 90px;
+   display: flex;
+   flex-direction: column;
+
+   &__buttons {
+      z-index: 99;
+   }
+
 }
+
+
+.wrap-text{
+   @include for-tablet-up{
+      margin: 61px 0 0 152px;
+   }
+}
+
+
+.hero-favicon {
+// position: absolute;
+// top:75%;
+   @include for-phone-up {
+      display: none;
+   }
+
+   @include for-tablet-up {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+   }
+position: absolute;
+top:75%;
+}
+
+
 
 .mobile-ice-cream {
    @include for-tablet-up-min{
@@ -96,7 +151,7 @@ display: none;
    }
 position: absolute;
 z-index: 9;
-top:18.5%;
+top:8.5%;
 left: 35%;
 
 }
@@ -105,7 +160,64 @@ left: 35%;
 display: none;
    }
    position: absolute;
-   top: 14%;
-   left: 16%;
+   top: 7.5%;
+   left: 11%;
+   
+}
+
+.tablet-milk{
+   @include for-phone-up{
+      display: none;
+   }
+   @include for-desktop{
+      display: none;
+      
+   }
+      position: absolute;
+      top:51.5%;
+}
+
+.tablet-girl{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+
+   }
+   position: absolute;
+   top:55.5%;
+   left: 70%;
+   z-index: 999;
  
+}
+.tablet-ellipse{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+
+   }
+   position: absolute;
+   top:-12%;
+   left: 33%;
+}
+
+.tablet-ice-cream{
+@include for-phone-up {
+      display: none;
+   }
+
+   @include for-desktop {
+      display: none;
+
+   }
+   
+   position: absolute;
+   top:0.5%;
+   left: 41.5%;
+   z-index: 999;
 }
