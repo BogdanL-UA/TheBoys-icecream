@@ -1,7 +1,13 @@
 .footer {
   background-color: $about-bg-color;
   &__wrap {
-    display: flex;
+    padding-top: 40px;
+    @include for-tablet-up-min {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 120px;
+    }
   }
   &__title {
     font-family: 'Titan One';
@@ -9,9 +15,12 @@
     text-align: left;
     padding-bottom: 40px;
     width: 232px;
-
     @include for-tablet-up {
       width: 340px;
+    }
+    @include for-desktop {
+      width: 480px;
+      padding-bottom: 60px;
     }
   }
 
