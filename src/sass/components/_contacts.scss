@@ -1,0 +1,109 @@
+.container {}
+
+.visually-hidden {}
+
+.contacts{
+
+&__card--list {
+   @include for-tablet-up-min {
+display: flex;
+justify-content: space-between;
+    }
+ 
+
+}
+
+&__card--item {
+    max-width: 480px;
+    min-height: 412px;
+    background: $main-white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    @include for-tablet-up-min{
+    width: 224px;
+    min-height: 528px;
+    margin-bottom: 60px;
+    margin-right: 32px;
+    margin-left: auto;
+    }
+    @include for-desktop {
+    padding: 40px 40px;
+    width: 368px;
+    min-height: 538px;
+    }
+}
+
+&__card--title {
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        width: 80px;
+        border-radius: 4px;
+        background-color: $second-card-bg-color;   
+        color: $main-white-color;
+}
+
+&__card--second{
+    background-color: $third-card-bg-color;
+    width: 130px;
+    }
+
+&__card--location {}
+
+&__card--shedule {}
+
+&__card--contact {}
+
+&__button{
+    @include for-tablet-up-min{
+        display: flex;
+        justify-content: center;
+    }
+
+&--location{
+    height: 44px;
+    min-width: 162px;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21 / 16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: $main-white-color;
+        background: #D41342;
+
+}
+&--franchise{
+    height: 44px;
+    min-width: 162px;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(21 / 16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: $titan-title-big-color;
+        background: $main-white-color;
+    
+        
+
+}
+    
+}
+
+}
