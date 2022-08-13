@@ -17,6 +17,18 @@
     font-size: 18px;
     line-height: 1.29;
 
+    @include for-tablet-up-min {
+        margin-bottom: 16px;
+
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @include for-desktop {
+        font-size: 30px;
+        line-height: 1.13;
+    }
+
     text-align: center;
     text-transform: uppercase;
 
@@ -28,6 +40,21 @@
 
     font-size: 34px;
     line-height: 1.15;
+
+    @include for-tablet-up-min {
+        margin-bottom: 40px;
+
+        font-size: 48px;
+        line-height: 1.15;
+    }
+
+    @include for-desktop {
+        margin-bottom: 60px;
+
+        font-size: 58px;
+        line-height: 1.14;
+    }
+
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -42,12 +69,50 @@
     object-fit: cover;
 }
 
+.content {
+    @include for-tablet-up-min {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    @include for-desktop {
+        padding-bottom: 20px;
+    }
+}
+
 .content__left-box {
-    margin-bottom: 40px;
+
+    @media screen and (min-width: 320px) {
+        width: 280px;
+    }
+
+    @include for-tablet-up-min {
+        width: 336px;
+    }
+
+    @include for-desktop {
+        width: 501px;
+    }
 }
 
 .content__right-box {
-    max-width: 220px;
+    padding-top: 40px;
+
+    @include for-phone-up {
+        max-width: 220px;
+    }
+
+    @include for-tablet-up-min {
+        width: 334px;
+        padding-top: 0;
+        margin-left: 32px;
+    }
+
+    @include for-desktop {
+        width: 463px;
+        padding-top: 90px;
+        margin-left: 99px;
+    }
 
     font-family: 'DM Sans';
     font-style: normal;
@@ -62,6 +127,18 @@
 
     color: $grey-text;
 
+    @include for-tablet-up-min {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 176%;
+    }
+
+    @include for-desktop {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 194%;
+    }
+
     &--bold {
         margin-bottom: 20px;
 
@@ -69,6 +146,18 @@
         line-height: 162%;
 
         color: $bleak-text;
+
+        @include for-tablet-up-min {
+            margin-bottom: 22px;
+            font-size: 14px;
+            line-height: 176%;
+        }
+
+        @include for-desktop {
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 176%;
+        }
     }
 }
 
@@ -87,4 +176,21 @@
     line-height: 1.29;
 
     color: $titan-title-big-color;
+
+    @include for-tablet-up-min {
+        font-size: 16px;
+        line-height: 1.31;
+    }
+
+    &:hover {
+        background-color: $btn-hover-color;
+    }
+}
+
+.content__button-pic {
+    margin-left: 13px;
+    width: 8px;
+    height: 10px;
+     stroke: currentColor;
+    //  fill: currentColor;
 }
