@@ -1,0 +1,90 @@
+// about section styles
+
+.about {
+    padding-bottom: 0;
+
+    background-color: $about-bg-color;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about__label {
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    line-height: 1.29;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $titan-title-small-color;
+}
+
+.about__title {
+    margin-bottom: 32px;
+
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $titan-title-big-color;
+}
+
+.about__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content__left-box {
+    margin-bottom: 40px;
+}
+
+.content__right-box {
+    max-width: 220px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.content__text {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    line-height: 162%;
+
+    color: $grey-text;
+
+    &--bold {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+        line-height: 162%;
+
+        color: $bleak-text;
+    }
+}
+
+.content__button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 37px;
+    height: 44px;
+
+    background-color: $main-white-color;
+    border-radius: 22px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: $titan-title-big-color;
+}
