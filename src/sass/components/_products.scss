@@ -87,12 +87,8 @@
 .first-header{
         &::before {
                 content: url(../images/products/firsticemob.png);
-                @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (min-resolution: 192dpi),
-                    (max-width: 767px) and (min-resolution: 2dppx) {
-                
-                        content: url("../images/products/firsticemobx2.png")
+                @include retina {
+                content: url("../images/products/firsticemobx2.png")
                     }
                 display: flex;
                 position: absolute;
@@ -108,11 +104,7 @@
 .second-header{
     &::before {
         content: url(../images/products/secondicemob.png);
-        @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-            (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-            (max-width: 767px) and (min-resolution: 192dpi),
-            (max-width: 767px) and (min-resolution: 2dppx) {
-        
+        @include retina {
             content: url("../images/products/secondicemobx2.png")
             }
             
@@ -131,11 +123,7 @@
 .third-header{
     &::before {
         content: url(../images/products/thirdicemob.png);
-        @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-            (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-            (max-width: 767px) and (min-resolution: 192dpi),
-            (max-width: 767px) and (min-resolution: 2dppx) {
-        
+        @include retina {
             content: url("../images/products/thirdicemobx2.png")
             }
             
@@ -172,13 +160,11 @@
    margin-bottom: 30px;
     width: 40px;
     height: 40px;
+
     background: url(../images/products/arrow-right.png);
-    @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-        (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-        (max-width: 767px) and (min-resolution: 192dpi),
-        (max-width: 767px) and (min-resolution: 2dppx) {
+    @include retina {
+    content: url("../images/products/arrow-rightx2.png")}
     
-            content: url("../images/products/arrow-rightx2.png")}
     background-size: contain;
     border-radius: 50%;
     outline: none;
