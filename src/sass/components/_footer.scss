@@ -1,134 +1,195 @@
 .footer {
-    background-color: $about-bg-color;
-&__wrap{
-    padding-top: 40px;    
+  background-color: $about-bg-color;
+  &__wrap {
+    padding-top: 40px;
     @include for-tablet-up-min {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 120px;
     }
-}
-&__title{
-font-family: 'Titan One';
-text-transform: uppercase;
-text-align: left;
-padding-bottom: 40px;
-width: 232px;
-@include for-tablet-up {
-    width: 340px;
-}
-@include for-desktop {
-    width: 480px;
-    padding-bottom: 60px;
-}
-}
+  }
+  &__title {
+    font-family: 'Titan One';
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 40px;
+    width: 232px;
+    @include for-tablet-up {
+      width: 340px;
+    }
+    @include for-desktop {
+      width: 480px;
+      padding-bottom: 60px;
+    }
+  }
 
-&__text--pre-title{
-        font-size: 18px;
-        line-height: calc(21 / 18);
- color: $dark-pink-bg-color;
- margin-bottom: 16px;
- @include for-tablet-up-min {
-    font-size: 26px;
-        line-height: calc(30 / 26);
-        letter-spacing: 0.04em;
- }
- @include for-desktop {
-    font-size: 30px;
-        line-height: calc(34 / 30);
- }
- @include for-tablet-up {
-    margin-bottom: 12px;
- }
-
-}
-&__text--title{
+  &__text--pre-title {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    color: $dark-pink-bg-color;
+    margin-bottom: 16px;
+    @include for-tablet-up-min {
+      font-size: 26px;
+      line-height: calc(30 / 26);
+      letter-spacing: 0.04em;
+    }
+    @include for-desktop {
+      font-size: 30px;
+      line-height: calc(34 / 30);
+    }
+    @include for-tablet-up {
+      margin-bottom: 12px;
+    }
+  }
+  &__text--title {
     font-size: 34px;
     line-height: calc(39 / 34);
     letter-spacing: 0.04em;
     color: $titan-title-big-color;
-    
-    @include for-tablet-up-min {
-    font-size: 58px;
-        line-height: calc(66 / 58);
-        letter-spacing: 0.06em;
-    }
-    }
-& a {
-    display: flex;
-}
 
-&__social--list {
-        display: flex;
-        justify-content: flex-end;
-        gap: 30px;
-        padding-bottom: 40px;
-            }
-&__social--item{
+    @include for-tablet-up-min {
+      font-size: 58px;
+      line-height: calc(66 / 58);
+      letter-spacing: 0.06em;
+    }
+  }
+  & a {
+    display: flex;
+  }
+
+  &__social--list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+  &__social--item {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FEA5BB;
+    background-color: #fea5bb;
     border-radius: 50%;
     width: 32px;
     height: 32px;
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     :focus {
-        background-color: $titan-title-big-color;
-    }     
+      background-color: $titan-title-big-color;
+    }
     @include for-tablet-up-min {
-        width: 34px;
-        height: 34px;
-        }
-         
-}
+      width: 34px;
+      height: 34px;
+    }
+  }
 
-
-&__phone{
- display: flex;
- justify-content: end;
- padding-bottom: 40px;
- color: $bleak-text;
- font-family: 'DM Sans';
+  &__phone {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    color: $bleak-text;
+    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
     transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     :focus {
-        color: $titan-title-big-color;
+      color: $titan-title-big-color;
     }
     @include for-tablet-up-min {
-        padding-bottom: 60px;
-        font-size: 14px;
+      padding-bottom: 60px;
+      font-size: 14px;
     }
 
     @include for-desktop {
-        font-size: 16px;
-        letter-spacing: 0.02em;
+      font-size: 16px;
+      letter-spacing: 0.02em;
     }
-}
+  }
 
-&__phone--number{
+  &__phone--number {
     font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 186%;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
     color: $titan-title-big-color;
     padding-left: 5px;
-    @include for-tablet-up-min{
-        font-size: 14px;
+    @include for-tablet-up-min {
+      font-size: 14px;
+    }
+  }
+  & a {
+    display: flex;
+  }
+
+  &__social--list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+  &__social--item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fea5bb;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      background-color: $titan-title-big-color;
+    }
+    @include for-tablet-up-min {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    color: $bleak-text;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    :focus {
+      color: $titan-title-big-color;
+    }
+    @include for-tablet-up-min {
+      padding-bottom: 60px;
+      font-size: 14px;
+    }
+
+    @include for-desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__phone--number {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    color: $titan-title-big-color;
+    padding-left: 5px;
+    @include for-tablet-up-min {
+      font-size: 14px;
     }
     @include for-desktop {
-        font-size: 16px;
-        letter-spacing: 0.02em;
+      font-size: 16px;
+      letter-spacing: 0.02em;
     }
-}
-    
+  }
 
-&__end {
+  &__end {
     color: $grey-text;
     font-size: 14px;
     line-height: 152%;
@@ -140,25 +201,22 @@ width: 232px;
     margin-right: auto;
 
     @media screen and (max-width: 401px) {
-            width: 150px;
-       
-        }
-    
+      width: 150px;
+    }
+
     @include for-phone-up {
-        padding-top: 16px;
+      padding-top: 16px;
     }
     @include for-tablet-up-min {
-        padding-top: 8px;
-        line-height: 186%;
-        letter-spacing: 0.02em;
+      padding-top: 8px;
+      line-height: 186%;
+      letter-spacing: 0.02em;
     }
-    
-}
-.footer__container::after {
+  }
+  .footer__container::after {
     content: '';
     border-top: 1px solid $customer-reviews-underline-color;
     width: 100%;
     position: absolute;
-    
-    }
+  }
 }
