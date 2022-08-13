@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 .products__label{
+    @media screen and(min-width:767px) {
+        margin-bottom: 18px;
+        font-size: 26px;
+        line-height: 1.15;
+    }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -11,11 +16,17 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
+    text-align: center;
     text-transform: uppercase;
     
     color: $titan-title-small-color;
 }
 .products__header{
+    @media screen and(min-width:767px) {
+        margin-bottom: 158px;
+        font-size: 48px;
+        line-height: 55px;
+    }
     margin-bottom: 148px;
 
     font-family: 'Titan One';
@@ -30,12 +41,22 @@
     color: $titan-title-big-color;
 }
 .product-items{
+    @media screen and(min-width:767px) {
+        flex-direction: row;
+    }
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
 .product-item{
+    @media screen and(min-width:767px) {
+       width: 224px;
+       height: 473px;
+       padding-top: 118px;
+       padding-left: 32px;
+       padding-right: 32px;   
+    }
     position: relative;
     display: flex;
     flex-direction: column;
@@ -58,6 +79,11 @@
 }
 .product-item:not(:last-child){
     margin-bottom: 140px;
+    @media screen and(min-width:767px) {
+        margin-right:16px;
+        margin-bottom: 0;
+    }
+
 }
 .product-item__header{  
     font-family: 'Titan One';
@@ -73,13 +99,15 @@
     color: $main-white-color;
         &::after {
                 content: url(../images/products/ellipsis.png);
-                @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (min-resolution: 192dpi),
-                    (max-width: 767px) and (min-resolution: 2dppx) {
-                
-                        content: url("../images/products/ellipsisx2.png")}
-                display: block;
+                @include retina {
+                content: url("../images/products/ellipsisx2.png")
+                }
+                display: flex;
+               flex-direction: column;
+               width: 26px;
+               height: 6px;
+                margin-left: auto;
+                margin-right: auto;
                 margin-top: 32px;
                 margin-bottom: 32px;
             }
@@ -87,12 +115,8 @@
 .first-header{
         &::before {
                 content: url(../images/products/firsticemob.png);
-                @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-                    (max-width: 767px) and (min-resolution: 192dpi),
-                    (max-width: 767px) and (min-resolution: 2dppx) {
-                
-                        content: url("../images/products/firsticemobx2.png")
+                @include retina {
+                content: url("../images/products/firsticemobx2.png")
                     }
                 display: flex;
                 position: absolute;
@@ -102,17 +126,22 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 margin-bottom: 20px;
-        
+        @media screen and (min-width:767px) {
+            content: url(../images/products/firsticetab.png);
+            @include retina {
+            content: url("../images/products/firsticetabx2.png")
+                }
+            width: 224px;
+            height: 224px;
+            margin-bottom: 32px;
+            transform: translate(-50%,-60%);
+        }
             }
 }
 .second-header{
     &::before {
         content: url(../images/products/secondicemob.png);
-        @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-            (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-            (max-width: 767px) and (min-resolution: 192dpi),
-            (max-width: 767px) and (min-resolution: 2dppx) {
-        
+        @include retina {
             content: url("../images/products/secondicemobx2.png")
             }
             
@@ -125,17 +154,24 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin-bottom: 20px;
-    
+                @media screen and (min-width:767px) {
+                    content: url(../images/products/secondicetab.png);
+        
+                    @include retina {
+                    content: url("../images/products/secondicetabx2.png")
+                    }
+        
+                    width: 224px;
+                    height: 224px;
+                    margin-bottom: 32px;
+                    transform: translate(-50%, -60%);
+                }
         }
 }
 .third-header{
     &::before {
         content: url(../images/products/thirdicemob.png);
-        @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-            (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-            (max-width: 767px) and (min-resolution: 192dpi),
-            (max-width: 767px) and (min-resolution: 2dppx) {
-        
+        @include retina {
             content: url("../images/products/thirdicemobx2.png")
             }
             
@@ -148,7 +184,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin-bottom: 20px;
-    
+                @media screen and (min-width:767px) {
+                    content: url(../images/products/thirdicetab.png);
+        
+                    @include retina {
+                        content: url("../images/products/thirdicetabx2.png")
+                    }
+        
+                    width: 224px;
+                    height: 224px;
+                    margin-bottom: 32px;
+                    transform: translate(-50%, -60%);
+                }
         }
 }
 
@@ -160,11 +207,15 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 152%;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
 
     color: $main-white-color;
+
+    @media screen and (min-width:767px) {
+        line-height: 1.8;
+    }
 }
 .product-item__button{
    margin-left: auto;
@@ -172,13 +223,11 @@
    margin-bottom: 30px;
     width: 40px;
     height: 40px;
+
     background: url(../images/products/arrow-right.png);
-    @media (max-width: 767px) and (min-device-pixel-ratio: 2),
-        (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
-        (max-width: 767px) and (min-resolution: 192dpi),
-        (max-width: 767px) and (min-resolution: 2dppx) {
+    @include retina {
+    content: url("../images/icons.svg#button-arrow")}
     
-            content: url("../images/products/arrow-rightx2.png")}
     background-size: contain;
     border-radius: 50%;
     outline: none;
