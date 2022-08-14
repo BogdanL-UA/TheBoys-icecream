@@ -1,7 +1,6 @@
 // about section styles
 
 .about {
-    position: relative;
     padding-bottom: 0;
 
     background-color: $about-bg-color;
@@ -13,16 +12,17 @@
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         background-image: url('../images/about/bg.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        //background-size: contain;
+        background-size: 100% 521px;
         background-position: left 0 bottom 0px;
     }
 
     @media screen and (min-width: 1600px) {
         background-image: url('../images/about/bg.png');
         background-repeat: no-repeat;
-        background-size: contain;
-        background-size: 1600px;
-        background-position-x: center;
+        //background-size: contain;
+        background-size: 1600px 521px;
+        background-position: center bottom 0px;
 
     }
 }
