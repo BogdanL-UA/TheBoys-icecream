@@ -1,8 +1,13 @@
 .container {}
+    
 
 .visually-hidden {}
 
 .contacts{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: linear-gradient($main-white-color 21%, #fff5f6 21%);
+        
 
 &__card--list {
    @include for-tablet-up-min {
@@ -14,15 +19,27 @@ justify-content: space-between;
 }
 
 &__card--item {
-    max-width: 480px;
+    max-width: 280px;
     min-height: 412px;
     background: $main-white-color;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 8px 30px hsla(345, 83%, 45%, 0.1);
+    
+        transition-property: transform;
+        transition-duration: 250ms;
+         
+        &:hover {
+            box-shadow: 0px 16px 50px hsla(345, 83%, 45%, 0.2);
+    
+            transform: scale(1.03);
+        }
+
+
+
     @include for-tablet-up-min{
     width: 224px;
     min-height: 528px;
@@ -48,28 +65,176 @@ justify-content: space-between;
         letter-spacing: 0.04em;
         width: 80px;
         border-radius: 4px;
+        margin-bottom: 20px;
         background-color: $second-card-bg-color;   
         color: $main-white-color;
+    @include for-tablet-up-min{
+        width: 74px;
+        border-radius: 6px;
+        font-size: 16px;
+        }
+    @include for-desktop{
+        width: 76px;
+        }
 }
 
 &__card--second{
     background-color: $third-card-bg-color;
     width: 130px;
     }
+    @include for-tablet-up-min{
+        width: 138px;
+        border-radius: 6px;
+        font-size: 16px;
+    }
 
-&__card--location {}
+&__card--location {
+    border-bottom: solid 1px $customer-reviews-underline-color;
+    margin-bottom: 24px;
+}
 
-&__card--shedule {}
+&__card--citi{
+    font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        letter-spacing: 0.04em;
+        color: $bleak-text;
+        margin-top: 0;
+        margin-bottom: 8px;
+    @include for-tablet-up-min {
+        font-size: 14px;
+        }
+    @include for-desktop {
+        font-size: 16px;
+    }
 
-&__card--contact {}
+}
+
+&__card--description{
+    font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(18 / 12);
+        color: $grey-text;
+        margin-top: 0px;
+        margin-bottom: 24;
+    @include for-tablet-up-min {
+        font-size: 14px;
+        line-height: 166%;
+    }
+    @include for-desktop {
+        font-size: 16px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+    }
+}
+
+&__card--shedule {
+    
+        margin-bottom: 24px;
+
+&-list {
+    
+
+}
+
+&-day {
+    font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: $bleak-text;
+            @include for-tablet-up-min{
+                font-size: 14px;
+            }
+                @include for-desktop{
+                    font-size: 16px;
+                    letter-spacing: 0.04em;
+                }
+
+}
+
+&-time {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: $titan-title-small-color;
+        margin-bottom: 8px;
+            @include for-tablet-up-min {
+                font-size: 14px;
+            }
+                @include for-desktop {
+                    font-size: 16px;
+                    letter-spacing: 0.04em;
+                        }
+
+}
+}
+
+
+&__card--contact {
+    border-top: solid 1px $customer-reviews-underline-color;
+    padding-top: 24px;
+    
+    &-list {
+        
+    }
+    
+    &-tel {font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(18 / 12);
+        color: $grey-text;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus{
+            color: $titan-title-small-color;
+        }
+        @include for-tablet-up-min{
+            font-size: 14px;
+            line-height: 183%;
+        }
+                 @include for-desktop {
+                     font-size: 16px;
+                 }
+                }
+    
+    &-mail {font-family: 'DM Sans';
+        
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(18 / 12);
+        color: $grey-text;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover,
+            &:focus {
+                color: $titan-title-small-color;
+            }
+            @include for-tablet-up-min {
+            font-size: 14px;
+            line-height: 183%;
+                         }
+                    @include for-desktop {
+                        font-size: 16px;
+                        }
+    }
+   
+}
 
 &__button{
     @include for-tablet-up-min{
         display: flex;
         justify-content: center;
+       
     }
 
 &--location{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
     height: 44px;
     min-width: 162px;
     border-radius: 22px;
@@ -83,9 +248,27 @@ justify-content: space-between;
         justify-content: center;
         color: $main-white-color;
         background: #D41342;
+        transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
+        
+    &:hover, &:focus{
+        color: #D41342;
+        background: $main-white-color;
+        }
+
+    @include for-tablet-up-min {
+        margin: 0 7px 0 0;
+        min-width: 192px;
+        }
+    @include for-desktop {
+        margin: 0 6px 0 0;
+        min-width: 198px;
+        }
+
 
 }
 &--franchise{
+    margin-right: auto;
+        margin-left: auto;
     height: 44px;
     min-width: 162px;
     border-radius: 22px;
@@ -99,11 +282,40 @@ justify-content: space-between;
         justify-content: center;
         color: $titan-title-big-color;
         background: $main-white-color;
+        transition: background-color 250ms cubic-bezier(.4, 0, .2, 1);
+
+    &:hover, &:focus {
+            color: $main-white-color;
+            background: $titan-title-big-color;
+        }
+
+    @include for-tablet-up-min {
+        margin: 0 0 0 7px;
+            min-width: 174px;
+            
+        }
     
+    @include for-desktop {
+            min-width: 168px;
+            margin: 0 0 0 6px;
+        }
         
 
 }
-    
+    &--icon{
+        width: 10px;
+        height: 12px;
+        margin-left: 8px;
+        @include for-tablet-up-min {
+
+        }
+       }
+    @include for-tablet-up-min {
+        padding-bottom: 40px;
+    }
+    @include for-desktop {
+            padding-bottom: 120px;
+        }
 }
 
 }
