@@ -1,6 +1,7 @@
 // about section styles
 
 .about {
+    position: relative;
     padding-bottom: 0;
 
     background-color: $about-bg-color;
@@ -8,6 +9,22 @@
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
+
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        background-image: url('../images/about/bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 0 bottom 0px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        background-image: url('../images/about/bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 1600px;
+        background-position-x: center;
+
+    }
 }
 
 .about__label {
@@ -70,8 +87,11 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @include for-tablet-up-min {
-        display: flex;
+        flex-direction: row;
         align-items: flex-start;
     }
 
@@ -98,8 +118,15 @@
 .content__right-box {
     padding-top: 40px;
 
+
     @include for-phone-up {
-        max-width: 220px;
+        padding-right: 60px;
+
+        background-image: url('../images/about/bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        //background-position: left 0 top 110px;
+        background-position: 0 45%;
     }
 
     @include for-tablet-up-min {
