@@ -60,15 +60,15 @@
 }
 .product-item{
     @media screen and(min-width:767px) {
-       width: 224px;
-       height: 473px;
+       max-width: 224px;
+       max-height: 473px;
        padding-top: 118px;
        padding-left: 32px;
        padding-right: 32px;   
     }
     @media screen and(min-width:1199px) {
-        width: 368px;
-        height: 535px;
+        max-width: 368px;
+        max-height: 535px;
         padding-top: 165px;
         padding-left: 61px;
         padding-right: 62px;
@@ -76,8 +76,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 489px;
+    max-width: 280px;
+    max-height: 489px;
     border-radius: 24px;
     background-color: $lite-pink-bg-color;
     padding-left: 40px;
