@@ -355,9 +355,11 @@
         @media screen and (min-width:1199px) {
             font-size: 16px;
             line-height: 1.75;
-            margin-bottom: 60px;
         }
 }
-.product-item__button.is-open+.overlay.is-open{
+.product-item__button.is-open+.overlay.is-open,
+.third-button.is-open+.overlay.is-open,
+.second-button.is-open+.overlay.is-open{
     opacity: 1;
 }
+
