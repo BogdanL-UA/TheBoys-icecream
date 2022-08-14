@@ -1,11 +1,29 @@
 .heder{
+    position: relative;
+
     // Цвет   бг пока временно
     background: $lite-pink-bg-color; 
+    
 }
 
-.nav {
-    
+.menu{
 
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 10px;
+}
+.nav {
+    // display: flex;
+    
+    &__item{
+        display: flex;
+        align-items: center;
+        height: 42px;
+        border: 1px solid #E18298;
+        margin-bottom: 22px;
+    }
     &__link {
         font-family: 'DM Sans';
         font-style: normal;
@@ -22,14 +40,16 @@
 
 }
 .logo-button{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    // display: flex;
-    // align-items: center;
-    // text-align: center;
+    cursor: pointer;
     color: $titan-title-big-color;
     width: 209px;
     height: 44px;
@@ -40,3 +60,49 @@
     }     
 
 }
+.menu-container{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 502px;
+    background-color: #e17992 ;
+    padding: 60px 20px;
+    z-index: 999;
+    box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0.25));;
+    
+}
+
+.menu-button{
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    max-width: 22px;
+    max-height: 12px;
+    
+    &--open{
+        background: $lite-pink-bg-color;
+        margin-top: 25px;
+    }
+    &--close{
+        position: absolute;
+        top: 25;
+        right: 20;
+        background-color: #e17992;
+    }
+}
+
+
+.menu-button .icon-cross {
+    display: none;
+}
+.menu-button.is-hidden .icon-cross{
+    display: block;
+}
+.menu-button.is-hidden .icon-menu {
+    display: none;
+}
+
+
