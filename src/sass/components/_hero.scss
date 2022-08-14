@@ -1,11 +1,15 @@
 .hero {
-  position: relative ;
+
    background-color:$lite-pink-bg-color ;
    @include for-phone-up{ height:448px;}
    @include for-tablet-up{ height:338px;
    padding: 20px 20px;}
    @include for-desktop{ height:581px };
- 
+
+
+ &__container{
+   position: relative;
+ }
    &__title{
       z-index: 99;
       font-size: 26px;
@@ -39,7 +43,9 @@
      &__text{
       position: absolute;
       color: $main-white-color;
-      z-index: 999;
+      z-index: 99;
+      bottom:-125% ;
+      left: 25.2%;
       
       @include for-phone-up{
          display: none;
@@ -56,6 +62,13 @@
       }
 
      } 
+}
+
+.wrap-hero-buttons{
+   // position: absolute;
+   // z-index: 9;
+   position: absolute;
+   z-index: 999;
 }
 
 .product-button {
@@ -99,13 +112,16 @@
    }
 }
 
-.wrap-hero {
+.wrap__hero {
+
 
    @include for-tablet-up {
+      width: 162px;
       margin-top: 0;
    }
 
    @include for-desktop {
+      width: 277px;
       margin-top: 0;
    }
 
@@ -113,23 +129,67 @@
    display: flex;
    flex-direction: column;
 
-   &__buttons {
-      z-index: 99;
-   }
+ width: 218px;
+
 
 }
 
-
-.wrap-text{
-   @include for-tablet-up{
-      margin: 61px 0 0 152px;
+.thumb-numb{
+  position: absolute;
+  left: 90%;
+ @include for-desktop{
+   display: none;
+ }
+ @include for-phone-up {
+    display: none;
+ }
+ 
+   &__numbers{  
+   font-family: 'Titan One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $titan-title-big-color;
+      
    }
-}
 
+   &__text{
+     margin: 0;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.1;
+      text-align: right;
+      color: $main-white-color;
+      
+   }
+   &__text-cafes{
+      margin-bottom: 17px;
+      margin-right: 10px;
+font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 8px;
+   line-height: 1.1;
+   text-align: right;
+   color: $main-white-color;
+
+   }}
+
+
+
+// .wrap-text{
+//    @include for-tablet-up{
+//       margin: 61px 0 0 152px;
+//    }
+// }
 
 .hero-favicon {
-// position: absolute;
-// top:75%;
+
    @include for-phone-up {
       display: none;
    }
@@ -140,27 +200,30 @@
       border-radius: 50%;
    }
 position: absolute;
-top:75%;
+bottom: -146%;
+left: 25.2%;
 }
 
 
 
 .mobile-ice-cream {
+   
    @include for-tablet-up-min{
 display: none;
    }
 position: absolute;
 z-index: 9;
-top:8.5%;
+top:-88.5%;
 left: 35%;
 
 }
 .mobile-ellipse{
+  
    @include for-tablet-up-min {
 display: none;
    }
    position: absolute;
-   top: 7.5%;
+   top: -77.5%;
    left: 11%;
    
 }
@@ -173,8 +236,10 @@ display: none;
       display: none;
       
    }
-      position: absolute;
-      top:51.5%;
+   //    position: absolute;
+   //   top: 115%;
+   position: absolute;
+   top: 145%;
 }
 
 .tablet-girl{
@@ -187,8 +252,8 @@ display: none;
 
    }
    position: absolute;
-   top:55.5%;
-   left: 70%;
+   bottom: -214px;
+   left: 73%;
    z-index: 999;
  
 }
@@ -202,7 +267,7 @@ display: none;
 
    }
    position: absolute;
-   top:-12%;
+   top:-50%;
    left: 33%;
 }
 
@@ -217,7 +282,7 @@ display: none;
    }
    
    position: absolute;
-   top:0.5%;
+   top:-18%;
    left: 41.5%;
    z-index: 999;
 }
