@@ -1,26 +1,53 @@
 <header class="heder">
     <div class="container">
-        <div class="logo">
-            <a class="logo__link" href="#">
-                <img class="logo__icon" src="./images/header/header-logo.png" alt="Logo" width="200px">
-            </a>
+        <nav class="menu">
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__icon" src="./images/header/header-logo.png" alt="Logo" width="200px">
+                </a>
+            </div>
+
+            <button 
+                class="menu-button menu-button--open " 
+                type="button" 
+                aria-expanded="false" 
+                aria-controls="menu-container"  
+                data-modal-open  
+                >
+                <svg width="22" height="12" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/header/icons.svg#burger"></use>
+                </svg>
+            </button>
+        
+        <div class="menu-container is-hidden" id="menu-container" data-modal> 
+            <button 
+                class="menu-button menu-button--close " 
+                type="button" 
+                aria-expanded="false"
+                aria-controls="menu-container" 
+                data-modal-close
+                >
+                <svg width="22" height="12" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/header/icons.svg#cross"></use>
+                </svg>
+            </button> 
+            
+            <button class="logo-button" type="button">Buy now <span class="logo-button__text">></span></button>
+
+            <ul class="nav"> 
+                <li class="nav__item">
+                    <a class="nav__link"  href="#">Home</a></li> 
+                <li class="nav__item">
+                    <a class="nav__link"  href="#">About us</a></li>
+                <li class="nav__item">
+                    <a class="nav__link"  href="#">How it’s made?</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Our products</a> </li>
+                <li class="nav__item">
+                    <a class="nav__link"  href="#">Contact</a></li> 
+            </ul>
         </div>
-    
-    
-        <ul class="nav">
-            <li class="nav__item">
-                <a class="nav__link"  href="#">Home</a></li>
-            <li class="nav__item">
-                <a class="nav__link"  href="#">About us</a></li>
-            <li class="nav__item">
-                <a class="nav__link"  href="#">How it’s made?</a></li>
-            <li class="nav__item">
-                <a class="nav__link" href="#">Our products</a> </li>
-            <li class="nav__item">
-                <a class="nav__link"  href="#">Contact</a></li>
-        </ul>
-    
-        <button class="logo-button" type="button">Buy now <span class="logo-button__text">></span></button>
+        </nav>
     </div>
     
 </header>
