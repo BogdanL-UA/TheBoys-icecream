@@ -8,6 +8,11 @@
         font-size: 26px;
         line-height: 1.15;
     }
+    @media screen and(min-width:1199px) {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.13;
+    }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -25,7 +30,11 @@
     @media screen and(min-width:767px) {
         margin-bottom: 158px;
         font-size: 48px;
-        line-height: 55px;
+    }
+    @media screen and(min-width:1199px) {
+        margin-bottom: 281px;
+        font-size: 58px;
+        line-height: 1.14;
     }
     margin-bottom: 148px;
 
@@ -57,6 +66,13 @@
        padding-left: 32px;
        padding-right: 32px;   
     }
+    @media screen and(min-width:1199px) {
+        width: 368px;
+        height: 535px;
+        padding-top: 165px;
+        padding-left: 61px;
+        padding-right: 62px;
+    }
     position: relative;
     display: flex;
     flex-direction: column;
@@ -83,6 +99,9 @@
         margin-right:16px;
         margin-bottom: 0;
     }
+    @media screen and(min-width:1199px) {
+        margin-right: 32px;
+    }
 
 }
 .product-item__header{  
@@ -95,8 +114,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 0;
-
     color: $main-white-color;
+
+    @media screen and(min-width:1199px) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
         &::after {
                 background-image: url(../images/products/ellipsis.png);
                 @include retina {
@@ -144,6 +167,15 @@
             margin-bottom: 32px;
             transform: translate(-50%, -60%);
         }
+        @media screen and(min-width:1199px) {
+            background-image: url(../images/products/firsticedesk.png);
+            @include retina{
+            background-image: url("../images/products/firsticedeskx2.png")
+            }
+            width: 368px;
+            height: 394px;
+            transform: translate(-50%, -65%);
+        }
             }
 }
 .second-header{
@@ -178,6 +210,17 @@
                     margin-bottom: 32px;
                     transform: translate(-50%, -60%);
                 }
+                @media screen and(min-width:1199px) {
+                    background-image: url(../images/products/secondicedesk.png);
+                
+                    @include retina {
+                    background-image: url("../images/products/secondicedeskx2.png")
+                    }
+                
+                    width: 368px;
+                    height: 394px;
+                    transform: translate(-50%, -65%);
+                                }
         }
 }
 .third-header{
@@ -213,6 +256,17 @@
             margin-bottom: 32px;
             transform: translate(-50%, -60%);
         }
+        @media screen and(min-width:1199px) {
+            background-image: url(../images/products/thirdicedesk.png);
+    
+            @include retina {
+                background-image: url("../images/products/thirdicedeskx2.png")
+            }
+    
+            width: 368px;
+            height: 394px;
+            transform: translate(-50%, -65%);
+        }
     }
 }
 
@@ -233,6 +287,11 @@
     @media screen and (min-width:767px) {
         line-height: 1.8;
     }
+    @media screen and (min-width:1199px) {
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 60px;
+    }
 }
 .product-item__button{
    margin-left: auto;
@@ -241,13 +300,18 @@
     width: 40px;
     height: 40px;
 
-    background: url(../images/products/arrow-right.png);
+    background-image: url(../images/products/arrow-right.png);
     @include retina {
     content: url("../images/icons.svg#button-arrow")}
-    
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius: 50%;
     outline: none;
     border: none;
     cursor: pointer;
+
+    @media screen and(min-width:1199px) {
+        margin-bottom: 60px;
+    }
 }
