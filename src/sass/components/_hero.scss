@@ -144,7 +144,27 @@
     display: none;
  }
  
-   &__numbers{  
+   &__numbers{ 
+      position: relative;
+    &::after{
+      @include for-phone-up{
+         display: none;
+      }
+      @include for-desktop{
+display: none;
+      }
+      content: '';
+      background-image: url('/src/images/hero/number-Ellipse.png');
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+     position: absolute;
+    bottom: 55%;
+    left: 85%;
+
+    }
    font-family: 'Titan One';
       font-style: normal;
       font-weight: 400;
