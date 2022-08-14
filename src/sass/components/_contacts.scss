@@ -3,11 +3,10 @@
 
 .visually-hidden {}
 
-.contacts{
-    padding-top: 0;
-    padding-bottom: 0;
-    background-image: linear-gradient($main-white-color 21%, #fff5f6 21%);
-        
+.contacts__section{
+   background-image: linear-gradient($main-white-color 21%, #fff5f6 21%);
+} 
+.contacts{ 
 
 &__card--list {
    @include for-tablet-up-min {
