@@ -870,14 +870,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: center;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .gallery {
-    min-width: 320px;
+    width: 320px;
     height: 136;
     margin-left: auto;
     margin-right: auto;
