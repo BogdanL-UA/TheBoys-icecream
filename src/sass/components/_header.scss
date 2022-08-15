@@ -13,6 +13,10 @@
 }
 .logo {
     margin-top: 10px;
+
+    @include for-tablet-up{
+        margin-top: 32px;
+    }
 }
 .nav {
     // display: flex;
@@ -40,25 +44,26 @@
 
 }
 .logo-button{
-    display: block;
+  @include logo-button{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    cursor: pointer;
-    color: $titan-title-big-color;
-    width: 209px;
-    height: 44px;
-    background: $main-white-color;
-    border-radius: 22px;   
-    &__text{
-        margin-left: 16px;
-    }     
+  } 
+}
 
+.logo-button-tablet{
+    @include logo-button {
+        display: none;
+
+        @include for-tablet-up {
+            display: block;
+            position: absolute;
+            top:32px;
+            right: 32px ;
+            // margin: 32px 0px 0px 0px;
+            width: 160px;
+        }
+    }
 }
 .menu-container{
     display: block;
@@ -69,9 +74,16 @@
     height: 502px;
     background-color: #e17992 ;
     padding: 60px 20px;
-    z-index: 999;
+    z-index: 99999;
     box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0.25));;
-    
+
+    @include for-tablet-up {
+        width: 254px;
+        height: 1020px;
+    }
+    @include for-desktop{
+        display: none;
+    }
 }
 
 .menu-button{
@@ -85,12 +97,24 @@
     &--open{
         background: $lite-pink-bg-color;
         margin-top: 25px;
+
+        @include for-tablet-up {
+            position: absolute;
+            top: 46;
+            right: 224;
+            z-index: 99998;
+            margin-top: 0px;
+        }
     }
     &--close{
         position: absolute;
         top: 25;
         right: 20;
         background-color: #e17992;
+    }
+
+    @include for-desktop{
+        display: none;
     }
 }
 
