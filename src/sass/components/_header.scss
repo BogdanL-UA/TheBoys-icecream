@@ -1,3 +1,13 @@
+@mixin nav__link {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: $main-white-color; 
+        @content;
+}
+
 .heder{
     position: relative;
 
@@ -9,13 +19,20 @@
 .menu{
 
     display: flex;
-    justify-content: space-between;
+    @include for-phone-up{
+        justify-content: space-between;
+    }
+    
 }
 .logo {
     margin-top: 10px;
 
     @include for-tablet-up{
         margin-top: 32px;
+    }
+    @include for-desktop {
+        margin-top: 37px;
+        margin-right: 128px;
     }
 }
 .nav {
@@ -43,6 +60,17 @@
     }
 
 }
+
+.nav-desktop{
+    display: flex;
+    gap: 35px;
+    &__link{
+        @include nav__link{
+
+        }
+    }
+}
+
 .logo-button{
   @include logo-button{
     margin-right: auto;
@@ -63,8 +91,15 @@
             // margin: 32px 0px 0px 0px;
             width: 160px;
         }
+        @include for-desktop{
+            display: block;
+            width: 160px;
+            margin-left: 120px;
+            margin-top: 40px;
+        }
     }
 }
+
 .menu-container{
     display: block;
     position: absolute;
@@ -82,6 +117,17 @@
         height: 1020px;
     }
     @include for-desktop{
+        display: none;
+    }
+}
+
+.menu-container-desktop{
+   
+    margin-top: 52px;
+    @include for-tablet-up{
+        display: none;
+    }
+    @include for-phone-up{ 
         display: none;
     }
 }
