@@ -17,3 +17,22 @@
     @content;
   }
 }
+@mixin logo-button {
+  display: block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  color: $titan-title-big-color;
+  width: 209px;
+  height: 44px;
+  background: $main-white-color;
+  border-radius: 22px; 
+
+  &__text{
+      margin-left: 16px;
+  }
+  @content;  
+}
