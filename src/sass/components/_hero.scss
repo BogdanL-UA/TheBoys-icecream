@@ -61,6 +61,11 @@
          
       }
 
+      @include for-desktop{
+       left: 19%;
+        }
+
+
      } 
 }
 
@@ -267,6 +272,7 @@ content: '';
             padding-bottom: 0;
             padding-left: 0;
             background-color: $main-white-color;
+            left: 19%;
       }
 position: absolute;
 bottom: -146%;
@@ -382,6 +388,8 @@ display: none;
       display: none;
 
    }
+   position: absolute;
+   bottom: -190%;
 }
 
 .dekstop-girl {
@@ -393,6 +401,10 @@ display: none;
       display: none;
 
    }
+   position: absolute;
+   left: 72%;
+   bottom: -219%;
+   z-index: 6;
 }
 .dekstop-ellipse{
    @include for-phone-up {
@@ -403,6 +415,9 @@ display: none;
       display: none;
 
    }
+   position: absolute;
+   top:-55%;
+   left: 38%;
 }
 .dekstop-ice-cream{
    @include for-phone-up {
@@ -413,4 +428,8 @@ display: none;
          display: none;
    
       }
+      position: absolute;
+      left: 50%;
+      top:-22%;
+      z-index: 9;
 }
