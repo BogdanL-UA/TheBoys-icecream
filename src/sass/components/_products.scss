@@ -311,11 +311,18 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: rotate 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and(min-width:1199px) {
-        margin-bottom: 60px;
+        fill: $bleak-text;
+        
     }
+   
 }
+ .product-item__button.is-open {
+     transform: rotate(180deg);
+    transition: rotate 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 .overlay{
     display: flex;
     align-items: center;
