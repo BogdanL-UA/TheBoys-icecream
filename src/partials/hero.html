@@ -3,32 +3,34 @@
 
 <div class="thumb-numb">
    <span class="thumb-numb__numbers">16</span>
-<p class="thumb-numb__text-cafes">cafes</p>
+<p class="thumb-numb__text-cafes">cafes</p> 
 
    <span class="thumb-numb__numbers">23</span>
 
    <p class="thumb-numb__text">food trucks</p>
-</div>              
+</div>                 
   
-   <div class="wrap__hero">      
+     <div class="wrap__hero">        
       <h1 class="hero__title">ice cream
       made with
       <span class="hero__title-passion"> passion </span>           
       </h1>                  
-      </div>                                                        
+   </div>                                                           
 <div class="wrap-hero-buttons">
      <button class=" product-button" type="button">Products</button>  
-      <button class="made-button" type="button" >How it’s made?</button>        
-        </div>               
-           
+      <button class="made-button" type="button" >How it’s made?</button>         
+        </div>                 
+            
   
-<div class="wrap-text">    
+<div class="wrap-text">      
    <p   class="hero__text">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut
    labore et</p>   
-      <button type="button" class="hero-favicon">
-      
-      </button>                    
-</div>               
+      <button type="button" class="hero-favicon">     
+      <svg class="hero-favicon__arrow"  >             
+         <use href="/src/images/hero/symbol-defs копія.svg#icon-arrow-right" ></use>           
+      </svg> 
+      </button>                       
+</div>                 
 
 
 <picture>
@@ -50,18 +52,28 @@
        src="/src/images/hero/mobile-ice-cream.png" alt="ice-cream" />
 </picture>  
    
+<!--tablet-images-->
    <div>
    <picture>  
+
+<source srcset="/src/images/hero/tablet-milk1x.png 1x, /src/images/hero/tablet-milk@2x.png 2x"  media="(min-width:768px)">
+
       <img class="tablet-milk" src="/src/images/hero/tablet-milk.png" alt="a jug of milk">
    </picture>    
-   <picture>     
+   <picture> 
+      <source srcset="/src/images/hero/tablet-ice-cream1x.png 1x, /src/images/hero/tablet-ice-cream@2x.png 2x"
+         media="(min-width:768px)">
+      
       <img class="tablet-ice-cream" src="/src/images/hero/tablet-ice-cream.png" alt="ice-cream">   
    </picture>        
   
    <picture> 
+
+      <source srcset="/src/images/hero/tablet-girl1x.png 1x, /src/images/hero/tablet-girl@2x.png 2x"
+         media="(min-width:768px)">
       <img class="tablet-girl" src="/src/images/hero/tablet-girl.png" alt="girl link ice-cream">   
    </picture>   
-   <picture> 
+   <picture>
 
 <source srcset='/src/images/hero/tablet-Ellipse1x.png 1x , /src/images/hero/tablet-Ellipse@2x.png 2x'
    media="(min-width:768px)" />
@@ -69,6 +81,32 @@
       <img class="tablet-ellipse" src="/src/images/hero/tablet-Ellipse.png" alt="ellipse">  
    </picture>  
    </div> 
+<!--dekstop-images-->
+    <div>   
+      <picture>
+<source srcset="/src/images/hero/dekstop-milk1x.png 1x, /src/images/hero/dekstop-milk@2x.png 2x"  media="(min-width:1200px)">
+
+      <img class="dekstop-milk" src="/src/images/hero/dekstop-milk.png" alt="a big jug of milk">
+      </picture>
+
+      <picture>
+         <source srcset="/src/images/hero/dekstop-ice-cream1x.png 1x, /src/images/hero/dekstop-ice-cream@2x.png 2x"  media="(min-width:1200px)">
+
+      <img class="dekstop-ice-cream" src="/src/images/hero/dekstop-ice-cream.png" alt=" big ice-cream">
+      </picture>
+
+      <picture>
+         <source srcset="/src/images/hero/dekstop-girl1x.png 1x, /src/images/hero/dekstop-girl@2x.png 2x"  media="(min-width:1200px)">
+
+      <img class="dekstop-girl" src="/src/images/hero/dekstop-girl.png" alt="girl link ice-cream">
+      </picture>
+
+      <picture>
+         <source srcset="/src/images/hero/dekstop-Ellipse1x.png 1x, /src/images/hero/dekstop-Ellipse@2x.png 2x"  media="(min-width:1200px)">
+
+      <img class="dekstop-ellipse" src="/src/images/hero/dekstop-Ellipse.png" alt="big pink Ellipse"> 
+      </picture>
+   </div>  
    
 </div>  
 </section> 
