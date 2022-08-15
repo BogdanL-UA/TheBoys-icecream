@@ -29,9 +29,12 @@
   width: 209px;
   height: 44px;
   background: $main-white-color;
+
   border-radius: 22px;
   &__text {
     margin-left: 16px;
   }
   @content;
 }
+
+
