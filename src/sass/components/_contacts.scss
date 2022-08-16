@@ -37,8 +37,6 @@ justify-content: space-between;
             transform: scale(1.03);
         }
 
-
-
     @include for-tablet-up-min{
     width: 224px;
     min-height: 528px;
@@ -47,10 +45,10 @@ justify-content: space-between;
     margin-left: auto;
     }
     @include for-desktop {
-    padding: 40px 40px;
-    width: 368px;
+    min-width: 368px;
     min-height: 538px;
-    }
+    padding: 40px 40px;
+     }
 }
 
 &__card--title {
