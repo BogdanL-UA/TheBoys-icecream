@@ -87,6 +87,7 @@
 
       @include for-desktop{
        left: 19%;
+       bottom: -150%;
         }
 
 
@@ -275,6 +276,7 @@
             padding-left: 0;
             background-color: $main-white-color;
             left: 19%;
+            bottom: -165%;
       }
 position: absolute;
 bottom: -146%;
