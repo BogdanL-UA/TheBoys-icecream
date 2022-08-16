@@ -5,7 +5,6 @@
   }
   @include for-tablet-up {
     padding: 30px 0;
-
     background-image: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
   }
   @include for-desktop {
