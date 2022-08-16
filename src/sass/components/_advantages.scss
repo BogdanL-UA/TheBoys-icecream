@@ -1,5 +1,10 @@
 .advantages {
   background-color: $about-bg-color;
+  padding-bottom: 30px;
+
+  @include for-desktop {
+    padding-bottom: 60px;
+  }
 
   &__list {
     display: flex;
