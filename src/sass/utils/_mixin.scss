@@ -36,5 +36,12 @@
   }
   @content;
 }
-
-
+@mixin nav__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: $main-white-color;
+  @content;
+}
