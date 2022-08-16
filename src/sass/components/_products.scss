@@ -72,6 +72,7 @@
         padding-top: 165px;
         padding-left: 61px;
         padding-right: 62px;
+        padding-bottom: 60px;
     }
     position: relative;
     display: flex;
@@ -294,7 +295,8 @@
     @media screen and (min-width:1199px) {
         font-size: 16px;
         line-height: 1.75;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
+      
     }
 }
 .product-item__button{
