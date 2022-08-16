@@ -83,6 +83,7 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 160px;
+    padding-bottom: 40px;
 }
 .item-first{
     background-color: $lite-pink-bg-color;
@@ -114,6 +115,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 0;
+    
     color: $main-white-color;
 
     @media screen and(min-width:1199px) {
@@ -136,7 +138,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 32px;
-                margin-bottom: 32px;
+                
             }
         }
 .first-header{
@@ -273,7 +275,9 @@
 
 
 .product-item__text{
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -297,7 +301,6 @@
     z-index: 20;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 40px;
     width: 40px;
     height: 40px;
 
