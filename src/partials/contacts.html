@@ -97,7 +97,7 @@
 
     </ul>
     <div class="contacts__button">
-        <button type="button" class="contacts__button--location">Our Locations
+        <button type="button" class="contacts__button--location" data-modal-open aria-label="open window our location">Our Locations
         <svg class="contacts__button--icon">
             <use href="./images/contact-svg/contact.svg#contact-arrow"></use>
         </svg>
@@ -110,5 +110,20 @@
     </div>
 
 </div>
-</section>   
-  
+</section>  
+
+<div class="contact__backdrop is-hidden" data-modal>
+    <div class="contact__modal container">
+        <p class="contact__modal--text">вікно в стадії розробки</p> 
+        <button class="contact__modal--close" type="button" data-modal-close aria-label="close window our location">
+            <svg width="22" height="12" aria-label="Закрытие окна">
+                <use class="contact__modal--icon" href="./images/contact-svg/contact.svg#cross"></use>
+            </svg>
+
+            </use>
+
+        </button> 
+    </div>   
+ 
+</div>  
+   
