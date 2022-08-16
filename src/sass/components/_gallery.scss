@@ -1,192 +1,224 @@
 .gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: center;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
+  @include for-phone-up {
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
+  }
+  @include for-tablet-up {
+    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, #fff5f6 47%, #fff 47%);
+  }
+  @include for-desktop {
+    padding: 60px 0;
+    background-image: linear-gradient(to bottom, #fff5f6 27%, #fff 27%);
+  }
 
-@media (max-width: 767px) {
-  .gallery {
-    width: 320px;
-    height: 136;
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
+    @include for-phone-up {
+      width: 320px;
+      height: 136px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+      padding-top: 0;
+    }
+    @include for-tablet-up {
+      width: 768px;
+      height: 326px;
+    }
+    @include for-desktop {
+      width: 1013px;
+      height: 430;
+    }
   }
 
-  .gallery__img1-pos {
-    position: absolute;
-    top: 45px;
-    left: 0px;
+  &__img1-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 45px;
+      left: 0px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 108px;
+      left: 0px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 143px;
+      left: 0px;
+    }
   }
-  .gallery__img2-pos {
-    position: absolute;
-    top: 28px;
-    left: 46px;
+  &__img2-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 28px;
+      left: 46px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 67px;
+      left: 110px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 89px;
+      left: 146px;
+    }
   }
-  .gallery__img3-pos {
-    position: absolute;
-    top: 74px;
-    left: 46px;
+  &__img3-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 74px;
+      left: 46px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 177px;
+      left: 110px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 233px;
+      left: 146px;
+    }
   }
-  .gallery__img4-pos {
-    position: absolute;
-    top: 0;
-    left: 92px;
+  &__img4-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 0;
+      left: 92px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 0;
+      left: 221px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 0;
+      left: 292px;
+    }
   }
-  .gallery__img5-pos {
-    position: absolute;
-    top: 92px;
-    left: 92px;
+  &__img5-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 92px;
+      left: 92px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 221px;
+      left: 221px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 291px;
+      left: 292px;
+    }
   }
-  .gallery__img6-pos {
-    position: absolute;
-    top: 31px;
-    left: 184px;
+  &__img6-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 31px;
+      left: 184px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 75px;
+      left: 442px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 99px;
+      left: 583px;
+    }
   }
-  .gallery__img7-pos {
-    position: absolute;
-    top: 78px;
-    left: 184px;
+  &__img7-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 78px;
+      left: 184px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 186px;
+      left: 442px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 246px;
+      left: 583px;
+    }
   }
-  .gallery__img8-pos {
-    position: absolute;
-    top: 21px;
-    left: 230px;
+  &__img8-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 21px;
+      left: 230px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 50px;
+      left: 552px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 66px;
+      left: 729px;
+    }
   }
-  .gallery__img9-pos {
-    position: absolute;
-    top: 67px;
-    left: 230px;
+  &__img9-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 67px;
+      left: 230px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 161px;
+      left: 552px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 213px;
+      left: 729px;
+    }
   }
-  .gallery__img10-pos {
-    position: absolute;
-    top: 45px;
-    left: 276px;
+  &__img10-pos {
+    @include for-phone-up {
+      position: absolute;
+      top: 45px;
+      left: 276px;
+    }
+    @include for-tablet-up {
+      position: absolute;
+      top: 117px;
+      left: 663px;
+    }
+    @include for-desktop {
+      position: absolute;
+      top: 155px;
+      left: 875px;
+    }
   }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .gallery {
-    width: 768px;
-    height: 326px;
+  &__link {
+    transition: 250ms, cubic-bezier(0.17, 0.67, 0.65, 0.61);
+    transform: scale(1), box-shadow;
   }
-  .gallery__img1-pos {
-    position: absolute;
-    top: 108px;
-    left: 0px;
-  }
-  .gallery__img2-pos {
-    position: absolute;
-    top: 67px;
-    left: 110px;
-  }
-  .gallery__img3-pos {
-    position: absolute;
-    top: 177px;
-    left: 110px;
-  }
-  .gallery__img4-pos {
-    position: absolute;
-    top: 0;
-    left: 221px;
-  }
-  .gallery__img5-pos {
-    position: absolute;
-    top: 221px;
-    left: 221px;
-  }
-  .gallery__img6-pos {
-    position: absolute;
-    top: 75px;
-    left: 442px;
-  }
-  .gallery__img7-pos {
-    position: absolute;
-    top: 186px;
-    left: 442px;
-  }
-  .gallery__img8-pos {
-    position: absolute;
-    top: 50px;
-    left: 552px;
-  }
-  .gallery__img9-pos {
-    position: absolute;
-    top: 161px;
-    left: 552px;
-  }
-  .gallery__img10-pos {
-    position: absolute;
-    top: 117px;
-    left: 663px;
-  }
-}
-@media (min-width: 1200px) {
-  .gallery {
-    width: 1013px;
-    height: 430;
-  }
-  .gallery__img1-pos {
-    position: absolute;
-    top: 143px;
-    left: 0px;
-  }
-  .gallery__img2-pos {
-    position: absolute;
-    top: 89px;
-    left: 146px;
-  }
-  .gallery__img3-pos {
-    position: absolute;
-    top: 233px;
-    left: 146px;
-  }
-  .gallery__img4-pos {
-    position: absolute;
-    top: 0;
-    left: 292px;
-  }
-  .gallery__img5-pos {
-    position: absolute;
-    top: 291px;
-    left: 292px;
-  }
-  .gallery__img6-pos {
-    position: absolute;
-    top: 99px;
-    left: 583px;
-  }
-  .gallery__img7-pos {
-    position: absolute;
-    top: 246px;
-    left: 583px;
-  }
-  .gallery__img8-pos {
-    position: absolute;
-    top: 66px;
-    left: 729px;
-  }
-  .gallery__img9-pos {
-    position: absolute;
-    top: 213px;
-    left: 729px;
-  }
-  .gallery__img10-pos {
-    position: absolute;
-    top: 155px;
-    left: 875px;
-  }
-}
-.gallery__link {
-  transition: 250ms, cubic-bezier(0.17, 0.67, 0.65, 0.61);
-  transform: scale(1);
-}
 
-.gallery__link :hover,
-.gallery__link :focus {
-  transform: scale(1.05);
-  z-index: 2;
+  &__link :hover,
+  &__link :focus {
+    transform: scale(1.05);
+    box-shadow: 2px -2px 7px 8px #fff, 10px 20px 50px #d2144333,
+      5px 5px 7px 5px #d41443;
+    z-index: 2;
+  }
 }
