@@ -3,16 +3,16 @@
         <nav class="menu">
             <div class="logo">
                 <a class="logo__link" href="#">
-                    <img class="logo__icon" src="./images/header/header-logo.png" alt="Logo" width="200px">
+                    <img class="logo__icon" src="./images/header/header-logo.png" alt="Logo" width="200">
                 </a>
             </div>
 
             <button 
-                class="menu-button menu-button--open " 
+                class="menu-button menu-button--open js-open-menu " 
                 type="button" 
                 aria-expanded="false"  
                 aria-controls="menu-container"     
-                data-modal-open  
+                js-open-modal
                 >
                 <svg width="22" height="12" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/header/icons.svg#burger"></use>
@@ -25,7 +25,7 @@
                     <li class="nav-desktop__item">
                         <a class="nav-desktop__link"  href="#about">About us</a></li>
                     <li class="nav-desktop__item">
-                        <a class="nav-desktop__link"  href="#how-it`s-made">How it’s made?</a></li>
+                        <a class="nav-desktop__link"  href="#how-its-made">How it’s made?</a></li>
                     <li class="nav-desktop__item"> 
                         <a class="nav-desktop__link" href="#our-product">Our products</a> </li>
                     <li class="nav-desktop__item">  
@@ -34,13 +34,12 @@
             </div>
             <button class="logo-button-tablet" type="button">Buy now <span class="logo-button__text">></span></button>
         
-        <div class="menu-container is-hidden" id="menu-container" data-modal> 
+        <div class="menu-container js-menu-container" id="menu-container" > 
             <button 
-                class="menu-button menu-button--close " 
+                class="menu-button menu-button--close js-close-menu " 
                 type="button" 
                 aria-expanded="false"
                 aria-controls="menu-container" 
-                data-modal-close 
                 >
                 <svg width="22" height="12" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/header/icons.svg#cross"></use>
@@ -55,7 +54,7 @@
                 <li class="nav__item">
                     <a class="nav__link"  href="#about">About us</a></li>
                 <li class="nav__item">
-                    <a class="nav__link"  href="#how-it`s-made">How it’s made?</a></li>
+                    <a class="nav__link"  href="#how-its-made">How it’s made?</a></li>
                 <li class="nav__item">
                     <a class="nav__link" href="#our-product">Our products</a> </li>
                 <li class="nav__item">
