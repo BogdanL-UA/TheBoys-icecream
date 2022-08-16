@@ -35,7 +35,7 @@
 
 
    &__title{
-      z-index: 99;
+      z-index: 2;
       font-size: 26px;
       line-height: 1.07;
       font-weight: 400;
@@ -67,7 +67,7 @@
      &__text{
       position: absolute;
       color: $main-white-color;
-      z-index: 99;
+      z-index: 1;
       bottom:-125% ;
       left: 25.2%;
       
@@ -200,7 +200,7 @@
    // position: absolute;
    // z-index: 9;
    position: absolute;
-   z-index: 999;
+   z-index: 2;
 }
 
 .product-button {
@@ -306,7 +306,7 @@ height: 20px;
 display: none;
    }
 position: absolute;
-z-index: 9;
+z-index: 1;
 top:-88.5%;
 right: 0;
 
@@ -347,7 +347,7 @@ display: none;
    position: absolute;
    bottom: -214px;
    left: 73%;
-   z-index: 999;
+   z-index: 2;
  
 }
 .tablet-ellipse{
@@ -376,7 +376,7 @@ display: none;
    position: absolute;
    top:-18%;
    left: 41.5%;
-   z-index: 999;
+   z-index: 2;
 }
 
 
@@ -406,7 +406,7 @@ display: none;
    position: absolute;
    left: 72%;
    bottom: -219%;
-   z-index: 6;
+   z-index: 1;
 }
 .dekstop-ellipse{
    @include for-phone-up {
@@ -433,5 +433,5 @@ display: none;
       position: absolute;
       left: 50%;
       top:-22%;
-      z-index: 9;
+      z-index: 2;
 }
