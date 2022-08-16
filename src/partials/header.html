@@ -8,11 +8,11 @@
             </div>
 
             <button 
-                class="menu-button menu-button--open " 
+                class="menu-button menu-button--open js-open-menu " 
                 type="button" 
                 aria-expanded="false"  
                 aria-controls="menu-container"     
-                data-modal-open  
+                js-open-modal
                 >
                 <svg width="22" height="12" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/header/icons.svg#burger"></use>
@@ -34,13 +34,12 @@
             </div>
             <button class="logo-button-tablet" type="button">Buy now <span class="logo-button__text">></span></button>
         
-        <div class="menu-container is-hidden" id="menu-container" data-modal> 
+        <div class="menu-container js-menu-container" id="menu-container" > 
             <button 
-                class="menu-button menu-button--close " 
+                class="menu-button menu-button--close js-close-menu " 
                 type="button" 
                 aria-expanded="false"
                 aria-controls="menu-container" 
-                data-modal-close 
                 >
                 <svg width="22" height="12" aria-label="Переключатель мобильного меню">
                     <use class="icon-menu" href="./images/header/icons.svg#cross"></use>
