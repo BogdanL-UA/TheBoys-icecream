@@ -8,7 +8,22 @@
         </h2>
         <div class="content">
             <div class="content__left-box">
-                <img class="about__img" src="./images/about/pic.png" alt="Milk and cow" />
+                <img 
+                    class="about__img" 
+                    srcset="./images/about/pic.png 280w, ./images/about/pic@2x.png 560w, ./images/about/pic@3x.png 840w"
+                    sizes="(min-width: 1200px) 501px, (min-width: 768px) 336px, 100vw"
+                    src="./images/about/pic.png" 
+                    alt="Milk and cow" 
+                />
+                <div class="bubble">
+                    <svg class="bubble__pic">
+                        <use href="./images/icons.svg#bubble2"></use>
+                    </svg>
+                    <span class="bubble__text">
+                        My milk 
+                        <br> the best!
+                    </span>
+                </div>
             </div>
             <div class="content__right-box">
                 <p class="content__text--bold">
@@ -22,14 +37,25 @@
                     imperdiet
                     placerat.
                     Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                    tincidunt.
-                    <br>
-                    <br>
-                    Aliquam erat volutpat. Aenean accumsan. 
+                    tincidunt.    
                 </p>
-                <button class="content__button" type="button">
-                    Read more
-                    <svg class="content__button-pic">
+                <p class="content__text">
+                    Aliquam erat volutpat. Aenean accumsan. 
+                
+                </p>
+                <p class="content__text readmore-off" id="readmore-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis expedita hic facilis fugit? Consequatur repellat quia consectetur perferendis in animi porro perspiciatis debitis, totam aperiam officia nam suscipit deserunt nesciunt.
+                    Quas et autem voluptates vero, quam, ab molestiae minus assumenda vitae architecto hic placeat ratione repellat repellendus cum fugit soluta tempore magnam eos rem sed. Deserunt hic at perferendis corrupti.
+                    Quibusdam, numquam veniam. Expedita quam repudiandae veniam quae necessitatibus, eveniet tempore porro non! Nobis iusto rem dolorem deleniti, vero, maxime quidem placeat vitae perferendis asperiores dicta ipsa nihil quae ad!
+                    Asperiores fuga ab hic labore ducimus placeat recusandae suscipit officia architecto, unde molestiae, consequatur similique praesentium nostrum quas debitis aut blanditiis optio, reprehenderit est illo ut at sed itaque? Velit?
+                    Amet ducimus doloremque corrupti atque deleniti expedita illum vitae earum corporis, commodi nostrum id eos qui sapiente similique sed odit. Corporis, culpa. Sapiente nihil voluptate ducimus doloremque beatae accusantium ipsum?
+                    Unde ad sapiente incidunt in, consequuntur, nihil dicta cupiditate excepturi perferendis tenetur modi quam accusamus iusto corrupti aperiam tempora accusantium maiores. Saepe commodi corporis tempora dicta quibusdam repellendus odio fugiat.
+            </p>
+                <button class="content__button" type="button" onclick="removeClass()">
+                    <span class="content__button-text" id="readmore-btn-text">
+                        Read more
+                    </span>
+                    <svg class="content__button-pic" id="readmore-icon">
                         <use href="./images/icons.svg#button-arrow"></use>
                     </svg>
                 </button>
@@ -38,3 +64,11 @@
 
     </div>
 </section>
+
+<script type="text/javascript">
+    function removeClass() {
+        document.getElementById('readmore-text').classList.toggle('readmore-off');
+        document.getElementById('readmore-btn-text').classList.toggle('readmore-off');
+        document.getElementById('readmore-icon').classList.toggle('readmore-off');
+    }
+</script>
