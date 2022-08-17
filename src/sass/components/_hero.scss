@@ -80,17 +80,13 @@
             font-weight: 400;
             font-size: 8px;
             line-height: 1.1;
-            margin-bottom: 7px;
-           
-         
+            margin-bottom: 7px;    
       }
 
       @include for-desktop{
        left: 19%;
        bottom: -150%;
         }
-
-
      } 
 }
 
@@ -138,7 +134,6 @@
          position: absolute;
          bottom: 55%;
          left: 85%;
-
       }
 
       font-family: 'Titan One';
@@ -149,9 +144,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $titan-title-big-color;
-
    }
-
 
    &__text-cafes {
       @include for-desktop {
@@ -159,7 +152,6 @@
          line-height: 1.28;
          padding-right: 15px;
       }
-
 
       margin: 0;
       padding: 0 10px 17px 0;
@@ -170,7 +162,6 @@
       line-height: 1.1;
       text-align: right;
       color: $main-white-color;
-
    }
 
    &__text {
@@ -188,15 +179,8 @@
       line-height: 1.1;
       text-align: right;
       color: $main-white-color;
-
    }
-
-
-
-
 }
-
-
 .wrap-hero-buttons{
    // position: absolute;
    // z-index: 9;
@@ -222,7 +206,6 @@
       font-size: 14px;
       line-height: 1.28;
       padding: 11px 23px;
-
    }
 }
 
@@ -246,12 +229,7 @@
    }
 }
 
-
-
-
 .hero-favicon {
-
-
    @include for-phone-up {
       display: none;
    }
@@ -297,11 +275,8 @@ height: 14px;
 width: 20px;
 height: 20px;
 } 
-
 }
 }
-
-
 .mobile-ice-cream {
    
    @include for-tablet-up-min{
@@ -311,7 +286,6 @@ position: absolute;
 z-index: 1;
 top:-88.5%;
 right: 0;
-
 }
 .mobile-ellipse{
   
@@ -321,8 +295,7 @@ display: none;
    position: absolute;
    top: -77.5%;
    right: 10%;
-   
-}
+ }
 
 .tablet-milk{
    @include for-phone-up{
@@ -330,8 +303,7 @@ display: none;
    }
    @include for-desktop{
       display: none;
-      
-   }
+        }
    //    position: absolute;
    //   top: 115%;
    position: absolute;
@@ -359,7 +331,6 @@ display: none;
 
    @include for-desktop {
       display: none;
-
    }
    position: absolute;
    top:-50%;
@@ -374,14 +345,11 @@ display: none;
       display: none;
 
    }
-   
    position: absolute;
    top:-18%;
    left: 41.5%;
    z-index: 2;
 }
-
-
 
 .dekstop-milk{
 @include for-phone-up {
@@ -395,7 +363,6 @@ display: none;
    position: absolute;
    bottom: -190%;
 }
-
 .dekstop-girl {
 @include for-phone-up {
       display: none;
@@ -403,7 +370,6 @@ display: none;
 
    @include for-tablet-up {
       display: none;
-
    }
    position: absolute;
    left: 72%;
@@ -417,7 +383,6 @@ display: none;
 
    @include for-tablet-up {
       display: none;
-
    }
    position: absolute;
    top:-55%;
@@ -429,8 +394,7 @@ display: none;
       }
    
       @include for-tablet-up {
-         display: none;
-   
+         display: none;   
       }
       position: absolute;
       left: 50%;
